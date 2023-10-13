@@ -1,0 +1,43 @@
+# dataset config
+data: /path/to/your/folder
+dataset: cifar100
+dataset_shuffle_class_order: True
+balanced_buffer: True
+joint: False
+buffer_size: 1
+few_shot: 0
+
+# base model and optimizer
+model: 'ViT-B/16'
+seed: 0
+optimizer: adamw
+lr: 7.5e-6
+wd: 0.2
+no_scheduler: False
+epochs: 10
+workers: 6
+batch_size: 128
+evaluation: False
+
+
+# method
+method: Finetune
+
+
+# device
+gpu: 0
+
+name:
+logs: /path/to/log
+print_frequency: 10
+val_frequency: 100
+save_ckpt: False
+save_base_path: /path/to/save/ckpt
+save_frequency: 100
+resume: False
+report_to: 
+wandb_project_name: FinetuneCLIP
+log_local: False
+
+debug: False
+sweep:
