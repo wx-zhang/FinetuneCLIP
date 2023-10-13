@@ -62,7 +62,6 @@ python main.py dataset=${DATASET} method=${METHOD}
   title = {Finetune CLIP for transfer learning and continual learning},
   year = {2013},
   publisher = {GitHub},
-  journal = {GitHub repository},
   url = {https://github.com/wx-zhang/FinetuneCLIP},
 }
 ```
