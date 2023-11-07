@@ -98,7 +98,7 @@ def main(args):
         print(f'Train task {task}')
         if args.evaluation:
             Trainer.only_evaluation(model, dataset, task)
-            break
+            continue
         Trainer.train(model, dataset, task)
         Trainer.evaluation(model, dataset, task)
         Trainer.save_checkpoint(model, task, args)
